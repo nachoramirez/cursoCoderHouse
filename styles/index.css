@@ -39,10 +39,21 @@ body {
   z-index: 11;
 }
 
+@keyframes animation {
+  0% {
+    transform: translateX(100px);
+  } 50% {
+    transform: translateX(-100px);
+  } 100% {
+    transform: translateX(100px);
+  }
+}
+
 .header__logo {
   justify-self: start;
   width: 110px;
   margin: 0px;
+  animation: animation 2s ease infinite;
 }
 
 .header__button {
