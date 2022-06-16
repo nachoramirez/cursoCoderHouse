@@ -17,21 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/merch.css" />
-     <!-- CSS only -->
-     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-     crossorigin="anonymous"
-   />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <title>9Z Team</title>
   </head>
   <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-md navbar-dark header ">
+    <nav class="navbar navbar-expand-md navbar-dark header">
       <div class="container-fluid">
-         <img
+        <img
           class="navbar-brand"
           src="../static/9zLogo.png"
           alt="9z logo"
@@ -50,91 +50,103 @@
         >
           <span class="navbar-toggler-icon link-light"></span>
         </button>
-        <div class=" collapse navbar-collapse " id="navbarNavAltMarkup">
-          <div class=" d-flex justify-content-center">
-            <div class="navbar-nav ">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="d-flex justify-content-center">
+            <div class="navbar-nav">
               <a
-              class="nav-link link-light "
-              aria-current="page"
-              href="../index.html"
-              >INICIO</a
+                class="nav-link link-light"
+                aria-current="page"
+                href="../index.html"
+                >INICIO</a
               >
-              <a
-              class="nav-link link-light  "
-              href="./partidos.html"
-              >PARTIDOS</a
-              >
-              <a
-              class="nav-link link-light  "
-              href="./merch.html"
-              >MERCH</a
-              >
-              <a
-              class="nav-link link-light  "
-              href="./contacto.html"
-              >CONTACTO</a
-              >
-              <a
-              class="nav-link link-light  "
-              href="./logros.html"
-              >LOGROS</a
-              >
+              <a class="nav-link link-light" href="./partidos.html">PARTIDOS</a>
+              <a class="nav-link link-light" href="./merch.html">MERCH</a>
+              <a class="nav-link link-light" href="./contacto.html">CONTACTO</a>
+              <a class="nav-link link-light" href="./logros.html">LOGROS</a>
             </div>
           </div>
         </div>
       </div>
     </nav>
 
-    <main>
-      <h1>Nuestros productos</h1>
-      <section class="products">
+    <main class="p-5 min-vh-100 container-fluid">
+      <h1 class="text-white">Nuestros productos</h1>
+      <section class="row row-cols-1 row-cols-md-3 g-4 gap-5 my-5">
         <!-- productos de Merchandising -->
-        <div class="product">
+        <div
+          class="card col-2 p-2"
+        style="width: 18rem;background-color: var(--details)"
+          style="background-color: var(--details)"
+        >
           <img
-            class="product__image"
+            class="card-img-top"
+            style="aspect-ratio: 1/1.2; object-fit: cover"
             alt="camiseta 9z"
             src="https://i.pinimg.com/736x/e0/27/d9/e027d962a5d134644d013332abc074ba.jpg"
           />
-          <h1>Camiseta 9z</h1>
+          <div class="card-body">
+            <h1 class="card-text text-center h2" >Camiseta 9z</h1>
+          </div>
         </div>
-        <div class="product">
+        <div
+          class="card col-2 p-2"
+          style="width: 18rem;background-color: var(--details)"
+        >
           <img
-            class="product__image"
+            class="card-img-top"
+            style="aspect-ratio: 1/1.2; object-fit: cover"
             alt="camiseta 9z blanca"
             src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/f10df399087485.5eeacf58446f1.png"
           />
-          <h1>Camiseta 9z blanca</h1>
+          <h1 class="card-text text-center h2" >Camiseta 9z blanca</h1>
         </div>
-        <div class="product">
+        <div
+          class="card col-2 p-2"
+        style="width: 18rem;background-color: var(--details)"
+        >
           <img
-            class="product__image"
+            class="card-img-top"
+            style="aspect-ratio: 1/1.2; object-fit: cover"
             alt="sticker holografico major"
             src="https://pbs.twimg.com/media/FR4DvyPX0AYROwM.jpg:large"
           />
-          <h1>Sticker holografico major</h1>
+          <h1 class="card-text text-center h2 ">Sticker holografico major</h1>
         </div>
-        <div class="product">
+        <div
+          class="card col-2 p-2"
+        style="width: 18rem;background-color: var(--details)"
+        >
           <img
-            class="product__image"
+            class="card-img-top"
+            style="aspect-ratio: 1/1.2; object-fit: cover"
             alt="sticker major"
             src="https://surtido.pe/wp-content/uploads/2022/05/PGL-Major-Antwerp-2022-CSGO-9z-Team-Stickers-Firmas-Pick-em-capsulas-counter-strike-global-offensive.jpg"
           />
-          <h1>Sticker major</h1>
+          <h1 class="card-text text-center h2" >Sticker major</h1>
         </div>
-        <div class="product">
+        <div
+          class="card col-2 p-2"
+         style="width: 18rem;background-color: var(--details)"
+        >
           <img
-            class="product__image"
+            class="card-img-top"
+            style="aspect-ratio: 1/1.2; object-fit: cover"
             alt="sticker glitter major"
             src="https://pbs.twimg.com/media/FR4AsT0XwAArh0A.jpg:large"
           />
-          <h1>Sticker glitter major</h1>
+          <h1 class="card-text text-center h2" >Sticker glitter major</h1>
         </div>
       </section>
     </main>
 
-    <footer >Copyright © 2022 9z Team. All Rights Reserved.</footer>
-      <!-- JavaScript Bundle with Popper -->
-      <script
+    <footer
+      class="d-flex justify-content-center align-items-center w-100 text-bg-dark"
+      style="height: 50px"
+    >
+      Copyright © 2022 9z Team. All Rights Reserved.
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"

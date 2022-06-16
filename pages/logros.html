@@ -17,21 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/logros.css" />
-     <!-- CSS only -->
-     <link
-     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-     rel="stylesheet"
-     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-     crossorigin="anonymous"
-   />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <title>9Z Team</title>
   </head>
   <body>
     <!-- Header -->
-     <nav class="navbar navbar-expand-md navbar-dark header ">
+    <nav class="navbar navbar-expand-md navbar-dark header">
       <div class="container-fluid">
-         <img
+        <img
           class="navbar-brand"
           src="../static/9zLogo.png"
           alt="9z logo"
@@ -50,35 +50,19 @@
         >
           <span class="navbar-toggler-icon link-light"></span>
         </button>
-        <div class=" collapse navbar-collapse " id="navbarNavAltMarkup">
-          <div class=" d-flex justify-content-center">
-            <div class="navbar-nav ">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="d-flex justify-content-center">
+            <div class="navbar-nav">
               <a
-              class="nav-link link-light "
-              aria-current="page"
-              href="../index.html"
-              >INICIO</a
+                class="nav-link link-light"
+                aria-current="page"
+                href="../index.html"
+                >INICIO</a
               >
-              <a
-              class="nav-link link-light  "
-              href="./partidos.html"
-              >PARTIDOS</a
-              >
-              <a
-              class="nav-link link-light  "
-              href="./merch.html"
-              >MERCH</a
-              >
-              <a
-              class="nav-link link-light  "
-              href="./contacto.html"
-              >CONTACTO</a
-              >
-              <a
-              class="nav-link link-light  "
-              href="./logros.html"
-              >LOGROS</a
-              >
+              <a class="nav-link link-light" href="./partidos.html">PARTIDOS</a>
+              <a class="nav-link link-light" href="./merch.html">MERCH</a>
+              <a class="nav-link link-light" href="./contacto.html">CONTACTO</a>
+              <a class="nav-link link-light" href="./logros.html">LOGROS</a>
             </div>
           </div>
         </div>
@@ -86,36 +70,54 @@
     </nav>
 
     <!--Inicio-->
-    <main>
-      <h1>Logros</h1>
-      <section class="achievements">
-        <div class="achievement">
+    <main class="min-vh-100 p-5">
+      <h1 class="text-white ">Logros</h1>
+      <section class="row row-cols-1 row-cols-md-3 gap-5 px-5 my-5">
+        <div
+          class="card p-2 "
+          style="width: 18rem; background-color: var(--details)"
+        >
           <img
+            class="card-img-top"
             alt="9zmajor"
             src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/W2S36BLZIBGBLE7V3E2WKGNSFE.jpg"
           />
-          <h1 class="achievement__title">9Z VA AL MAJOR</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            porttitor ullamcorper massa eu dapibus.
-          </p>
+          <div class="card-body">
+            <h5 class="card-title text-white">9Z VA AL MAJOR</h5>
+            <p class="card-text text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              porttitor ullamcorper massa eu dapibus.
+            </p>
+          </div>
         </div>
-        <div class="achievement">
+
+        <div
+          class="card p-2"
+          style="width: 18rem; background-color: var(--details)"
+        >
           <img
+            class="card-img-top"
             alt="9z campeon liga reddragon"
             src="https://media.a24.com/p/a0d5e635785bba9de74c63f6a896a792/adjuntos/296/imagenes/008/780/0008780327/1200x675/smart/9zjpeg.jpeg"
           />
-          <h1 class="achievement__title">9Z CAMPEON</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            porttitor ullamcorper massa eu dapibus.
-          </p>
+          <div class="card-body">
+            <h5 class="card-title text-white">9Z CAMPEON</h5>
+            <p class="card-text text-white">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+              porttitor ullamcorper massa eu dapibus.
+            </p>
+          </div>
         </div>
       </section>
     </main>
-    <footer>Copyright © 2022 9z Team. All Rights Reserved.</footer>
-      <!-- JavaScript Bundle with Popper -->
-      <script
+    <footer
+      class="d-flex justify-content-center align-items-center w-100 text-bg-dark"
+      style="height: 50px"
+    >
+      Copyright © 2022 9z Team. All Rights Reserved.
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
