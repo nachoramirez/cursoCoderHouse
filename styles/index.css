@@ -50,11 +50,35 @@ body {
   color: var(--principal);
 }
 
-.footer {
-  display: flex;
+.matches {
+  font: 1em;
+  display: grid;
   justify-content: center;
-  align-items: center;
-  background-color: var(--black);
-  height: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 450px));
+  grid-gap: 20px 50px;
+  width: 95%;
+  margin: 20px;
+}
+
+.match {
+  background-color: var(--details);
+  display: grid;
+  grid-template-columns: 100px 50px minmax(50px, auto) 50px 120px;
+  grid-gap: 5px;
+  height: 100px;
+  border-radius: 5px;
+  max-width: 650px;
   width: 100%;
+}
+
+.match__image {
+  width: 50px;
+  justify-self: center;
+  align-self: center;
+}
+
+.match_text {
+  justify-self: center;
+  align-self: center;
+  font-size: 1em;
 }
