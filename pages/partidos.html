@@ -18,12 +18,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/partidos.css" />
+    <link rel="stylesheet" href="../styles/headerandfooter.css" />
     <title>9Z Team</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <img class="header__logo" alt="9z logo" src="../static/9zLogo.png" />
+      <div class="header__button" onclick="{changeDisplay()}"></div>
       <nav class="header__nav">
         <ul class="header__nav__ul">
           <li>
@@ -127,5 +129,20 @@
     <footer class="footer">
       Copyright © 2022 9z Team. All Rights Reserved.
     </footer>
+    <script>
+      const nav = document.querySelector(".header__nav")
+      let display = false
+
+      const changeDisplay = () => {
+        display = !display
+        if(display) {
+          nav.style.opacity = "1"
+          nav.style.visibility =  "visible"
+        } else {
+          nav.style.opacity = "0"
+          nav.style.visibility =  "hidden"
+        }
+      }
+    </script>
   </body>
 </html>
