@@ -100,10 +100,20 @@
     </footer>
     <script>
       const nav = document.querySelector(".header__nav")
+      let windowWidth = window.innerWidth
       let display = false
+      
+      function verifyWidth() {
+        windowWidth = window.innerWidth
+        if (windowWidth > 768) {
+          nav.style.opacity = "1"
+          nav.style.visibility = "visible"
+        }
+      }
 
       const changeDisplay = () => {
         display = !display
+        windowWidth > 768 && (display = true)
         if (display) {
           nav.style.opacity = "1"
           nav.style.visibility = "visible"
@@ -112,6 +122,8 @@
           nav.style.visibility = "hidden"
         }
       }
+
+      window.onresize = verifyWidth
     </script>
   </body>
 </html>
