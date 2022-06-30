@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pagina ''oficial'' de 9z" />
+    <meta
+      name="keyworlds"
+      content="9Z, 9Z TEAM, ESPORTS,DEPORTES ELECTRONICOS,MAJOR, CS:GO, COUNTER-STRIKE"
+    />
+
+    <meta property="og:title" content="9Z Team" />
+    <meta property="og:description" content="Pagina ''oficial'' de 9z" />
+    <meta
+      property="og:image"
+      content="./og.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,6 +28,32 @@
       href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link href="./sitemap.xml" rel="sitemap" />
+    <link href="./robots.txt" rel="robots" />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/translated.css" />
     <title>9Z Team</title>
@@ -60,7 +97,7 @@
           auctor ligula sed dolor elementum rhoncus. Vestibulum rhoncus quis
           ante elementum congue.
         </p>
-        <h1 class="main__description__text--violeta">#TODOVIOLETA</h1>
+        <h3 class="main__description__text--violeta">#TODOVIOLETA</h3>
       </section>
       <section class="main__dueno">
         <img
@@ -69,7 +106,7 @@
           src="./static/fankkaster.jpg"
         />
         <div class="main__dueno__text">
-          <h1 class="main__dueno__title">NUESTRO DUEÑO</h1>
+          <h2 class="main__dueno__title">NUESTRO DUEÑO</h2>
           <p class="main__dueno__p">
             (HISTORIA) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Morbi porttitor ullamcorper massa eu dapibus. Duis auctor ligula sed
@@ -86,15 +123,15 @@
       Copyright © 2022 9z Team. All Rights Reserved.
     </footer>
     <script>
-      const nav = document.querySelector(".header__nav")
+      const nav = document.querySelector('.header__nav')
       let windowWidth = window.innerWidth
       let display = false
-      
+
       function verifyWidth() {
         windowWidth = window.innerWidth
         if (windowWidth > 768) {
-          nav.style.opacity = "1"
-          nav.style.visibility = "visible"
+          nav.style.opacity = '1'
+          nav.style.visibility = 'visible'
         }
       }
 
@@ -102,11 +139,11 @@
         display = !display
         windowWidth > 768 && (display = true)
         if (display) {
-          nav.style.opacity = "1"
-          nav.style.visibility = "visible"
+          nav.style.opacity = '1'
+          nav.style.visibility = 'visible'
         } else {
-          nav.style.opacity = "0"
-          nav.style.visibility = "hidden"
+          nav.style.opacity = '0'
+          nav.style.visibility = 'hidden'
         }
       }
 
