@@ -12,10 +12,7 @@
 
     <meta property="og:title" content="9Z Team" />
     <meta property="og:description" content="Pagina ''oficial'' de 9z" />
-    <meta
-      property="og:image"
-      content="../og.png"
-    />
+    <meta property="og:image" content="../og.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,8 +51,7 @@
     <link rel="manifest" href="../site.webmanifest" />
     <link href="../sitemap.xml" rel="sitemap" />
     <link href="../robots.txt" rel="robots" />
-    <link rel="stylesheet" href="../styles/contacto.css" />
-    <link rel="stylesheet" href="../styles/headerandfooter.css" />
+    <link rel="stylesheet" href="./styles/translated.css" />
     <title>CONTACTO | 9Z Team</title>
   </head>
   <body>
@@ -121,17 +117,19 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">Copyright © 2022 9z Team. All Rights Reserved.</footer>
+    <footer class="footer">
+      Copyright © 2022 9z Team. All Rights Reserved.
+    </footer>
     <script>
-      const nav = document.querySelector(".header__nav")
+      const nav = document.querySelector('.header__nav')
       let windowWidth = window.innerWidth
       let display = false
-      
+
       function verifyWidth() {
         windowWidth = window.innerWidth
         if (windowWidth > 768) {
-          nav.style.opacity = "1"
-          nav.style.visibility = "visible"
+          nav.style.opacity = '1'
+          nav.style.visibility = 'visible'
         }
       }
 
@@ -139,11 +137,11 @@
         display = !display
         windowWidth > 768 && (display = true)
         if (display) {
-          nav.style.opacity = "1"
-          nav.style.visibility = "visible"
+          nav.style.opacity = '1'
+          nav.style.visibility = 'visible'
         } else {
-          nav.style.opacity = "0"
-          nav.style.visibility = "hidden"
+          nav.style.opacity = '0'
+          nav.style.visibility = 'hidden'
         }
       }
 
