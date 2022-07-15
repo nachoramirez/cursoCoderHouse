@@ -1,9 +1,10 @@
-//variables
-$white: #f2e8f9;
-$principal: #361965;
-$secundary: #46218e;
-$details: #9150ee;
-$black: #000016;
+@import 'variables.scss';
+
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 body {
   font-family: 'Montserrat';
@@ -124,22 +125,20 @@ body {
   }
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $black;
-  height: 50px;
-  width: 100%;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.footer {
+  @include display-center;
+  background-color: $black;
+  height: 50px;
+  width: 100%;
+}
 
 .main__description {
+  @extend .main;
   background-image: linear-gradient(
       rgba(54, 25, 101, 0.7),
       rgba(54, 25, 101, 0.7)
@@ -152,9 +151,6 @@ body {
   min-height: 75vh;
   width: calc(100% - 100px);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
   padding: 50px;
   box-shadow: 0px 10px 15px -3px rgba($black, 0.4);
@@ -210,7 +206,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  & h1 {
+  h1 {
     margin: 50px;
     font-size: 2em;
   }
@@ -268,13 +264,13 @@ button {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-  & img {
+  img {
     height: 80px;
   }
 }
 
 .achievements__container {
-  & h1 {
+  h1 {
     margin: 30px;
   }
 }
@@ -295,7 +291,7 @@ button {
   flex-direction: column;
   padding: 15px;
 
-  & img {
+  img {
     height: 200px;
     object-fit: cover;
   }
@@ -325,7 +321,7 @@ button {
   height: 340px;
   width: 100%;
   border-radius: 5px;
-  & h1 {
+  h1 {
     text-align: center;
     font-size: 1.4em;
   }
@@ -337,13 +333,11 @@ button {
   object-fit: cover;
 }
 
-
 .matches__main {
   padding: 40px;
   min-height: 65vh;
-  &>h1 {
-
-    font-size: clamp(1.4em, 2em,1em);
+  h1 {
+    font-size: clamp(1.4em, 2em, 1em);
   }
 }
 
@@ -366,21 +360,39 @@ button {
   border-radius: 5px;
   max-width: 650px;
   width: 100%;
+  .match__image {
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .match_text {
+    justify-self: center;
+    align-self: center;
+    font-size: clamp(0.7em, 1em, 1em);
+  }
 }
 
-.match__image {
-  width: 50px;
-  justify-self: center;
-  align-self: center;
+@media screen and (max-width: 420px) {
+  .matches {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
+    grid-gap: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .match {
+    grid-template-columns: 90px 40px minmax(50px, auto) 40px 90px;
+    grid-gap: 0;
+    max-width: 310px;
+    margin-left: 40px;
+  }
+  .achievements {
+    padding-left: 40px;
+    justify-content: flex-start;
+  }
 }
-
-.match_text {
-  justify-self: center;
-  align-self: center;
-  font-size: clamp(0.7em, 1em,1em);
-}
-
-
 
 @media screen and (max-width: 768px) {
   .matches__main {
@@ -395,9 +407,6 @@ button {
     width: 100%;
     margin: 0;
   }
-}
-
-@media screen and (max-width: 768px) {
   form {
     display: flex;
     flex-direction: column;

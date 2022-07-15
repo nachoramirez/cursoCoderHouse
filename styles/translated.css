@@ -88,6 +88,11 @@ body {
   .header__nav__a:visited {
     color: #f2e8f9; }
 
+.main, .main__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .footer {
   display: flex;
   justify-content: center;
@@ -95,11 +100,6 @@ body {
   background-color: #000016;
   height: 50px;
   width: 100%; }
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 .main__description {
   background-image: linear-gradient(rgba(54, 25, 101, 0.7), rgba(54, 25, 101, 0.7)), url("../static/wallpaper.jpg");
@@ -109,9 +109,6 @@ body {
   height: auto;
   min-height: 75vh;
   width: calc(100% - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
   padding: 50px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 22, 0.4); }
@@ -268,7 +265,7 @@ button {
 .matches__main {
   padding: 40px;
   min-height: 65vh; }
-  .matches__main > h1 {
+  .matches__main h1 {
     font-size: clamp(1.4em, 2em, 1em); }
 
 .matches {
@@ -289,16 +286,31 @@ button {
   border-radius: 5px;
   max-width: 650px;
   width: 100%; }
+  .match .match__image {
+    width: 50px;
+    justify-self: center;
+    align-self: center; }
+  .match .match_text {
+    justify-self: center;
+    align-self: center;
+    font-size: clamp(0.7em, 1em, 1em); }
 
-.match__image {
-  width: 50px;
-  justify-self: center;
-  align-self: center; }
-
-.match_text {
-  justify-self: center;
-  align-self: center;
-  font-size: clamp(0.7em, 1em, 1em); }
+@media screen and (max-width: 420px) {
+  .matches {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
+    grid-gap: 0;
+    width: 100%;
+    margin: 0; }
+  .match {
+    grid-template-columns: 90px 40px minmax(50px, auto) 40px 90px;
+    grid-gap: 0;
+    max-width: 310px;
+    margin-left: 40px; }
+  .achievements {
+    padding-left: 40px;
+    justify-content: flex-start; } }
 
 @media screen and (max-width: 768px) {
   .matches__main {
@@ -309,9 +321,7 @@ button {
     grid-template-columns: repeat(auto-fill, minmax(380px, 450px));
     grid-gap: 20px 50px;
     width: 100%;
-    margin: 0; } }
-
-@media screen and (max-width: 768px) {
+    margin: 0; }
   form {
     display: flex;
     flex-direction: column;
